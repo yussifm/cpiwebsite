@@ -49,8 +49,10 @@ body {
 }
 
 .top-h2 {
-    margin-top: 2%;
+    margin-top: 10%;
     font-weight: lighter;
+    font-family: monospace;
+    font-size: xx-large;
 }
 
 .top-ul {
@@ -72,6 +74,28 @@ body {
 }
 
 
+/* Style all font awesome icons */
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: rgb(5, 58, 5);
+}
+
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+    opacity: 0.7;
+    background-color: lightgreen;
+    text-decoration: none;
+}
+
+
 /* Top main Nav bar*/
 
 @media screen and (max-width: 768px) {
@@ -86,6 +110,43 @@ body {
 
 .b-container {
     margin: 2% 2% 30% 2%;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-details p {
+    width: 100%;
+    max-width: 80%;
+}
+
+.hero-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-image img {
+        width: 100%;
+        clear: left;
+    }
+    .b-container {
+        margin: 2% 5% 30% 5%;
+        font-size: 90%;
+        text-indent: 0%;
+    }
+    .hero-image {
+        width: 100%;
+        overflow: visible;
+    }
 }
 
 
