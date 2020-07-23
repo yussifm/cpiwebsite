@@ -6,7 +6,6 @@ const port = 3000;
 const app = express();
 
 app.use(bodyParser());
-
 //statics
 app.use(express.static("./public"));
 app.use(express.static(__dirname + "/public/css"));
