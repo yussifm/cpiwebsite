@@ -29,6 +29,13 @@ app.get("/about", function(req, res) {
     });
 });
 
+app.get("/gallary", function(req, res){
+    res.render("gallary", {
+        text: "CPI Webiste with nodjs and ejs",
+        title: "Gallary"
+    });
+});
+
 app.listen(port, () => {
     console.info(`Server is running on port ${port}`);
 });

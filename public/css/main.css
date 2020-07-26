@@ -26,6 +26,7 @@ html {
 body {
     background: #ccc;
     line-height: 1.5;
+    box-sizing: border-box;
 }
 
 
@@ -146,6 +147,7 @@ body {
     display: grid;
     grid-gap: 20px;
     grid-template-areas: 'showcase showcase top-box-a''showcase showcase top-box-b';
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
 }
 
 .btn {
@@ -181,8 +183,8 @@ img {
 }
 
 .showcase h1 {
-    background-color: rgba(0, 0, 0, 0.767);
-    padding: 1rem;
+    background-color: rgba(9, 36, 3, 0.767);
+    padding: 5rem;
     border-top-left-radius: 50px;
     font-size: 4rem;
     margin-bottom: 0;
@@ -190,8 +192,8 @@ img {
 }
 
 .showcase p {
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.651);
+    padding: 2rem;
+    background-color: rgba(26, 36, 18, 0.651);
     border-bottom-right-radius: 50px;
     font-size: larger;
     margin-bottom: 2%;
@@ -233,4 +235,31 @@ img {
     padding: 1.3rem 2rem;
     background: var(--lighter);
     box-shadow: var(--shadow);
+}
+
+.describ ul {
+    list-style: none;
+}
+
+
+/* footer */
+
+footer {
+    background-color: var(--red);
+    margin-bottom: 0rem;
+    padding: 0.1rem;
+    color: white;
+}
+
+footer .gallary img {
+    width: 5rem;
+    height: 5rem;
+}
+
+footer h1 {
+    font-size: medium;
+}
+
+footer p {
+    font-size: small;
 }

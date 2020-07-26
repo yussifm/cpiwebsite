@@ -1,0 +1,7 @@
+html {
+    box-sizing: border-box;
+}
+
+.content {
+    margin: 1rem 10rem;
+}
