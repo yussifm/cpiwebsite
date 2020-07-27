@@ -5,3 +5,35 @@ html {
 .content {
     margin: 1rem 10rem;
 }
+
+@media screen and (max-width: 780px) {
+    .content {
+        width: 46%;
+        margin: 10%;
+    }
+    .content h1 {
+        font-size: xx-large;
+    }
+    .content h3 {
+        font-size: x-large;
+    }
+    .content p {
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        width: 80%;
+        margin: 10%;
+    }
+    .content h1 {
+        font-size: x-large;
+    }
+    .content h3 {
+        font-size: larger;
+    }
+    .content p {
+        font-size: smaller;
+    }
+}

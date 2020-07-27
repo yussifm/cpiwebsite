@@ -3,32 +3,23 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
+<html class="no-js">
 <!--<![endif]-->
 <%- include("./partials/head") %>
-
 
     <body>
         <%- include("./partials/socialm") %>
             <%- include("./partials/nav") %>
-                <div class="wrapper">
-                    <h1>Gallary</h1>
 
-                    <section class="g-imges">
-                        <div class="g-img">
-                            <% for(var i=0; i<imgs.length; i++){ %>
-                                <img src="<%= imgs[i].image %>">
-                                <% } %>
-                        </div>
-
-                    </section>
-                </div>
-
-
-
-
+                <h1>Support</h1>
+                <p>
+                    By donating to this varius accounts
+                </p>
+                <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
                 <%- include("./partials/footer") %>
-
     </body>
 
-    </html>
+</html>

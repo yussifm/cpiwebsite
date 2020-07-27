@@ -56,7 +56,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    background-color: #fff;
+    background-color: #ccc;
     font-size: 12px;
     border-bottom: 1px solid #f1f1f1;
     z-index: 101;
@@ -147,7 +147,7 @@ body {
     display: grid;
     grid-gap: 20px;
     grid-template-areas: 'showcase showcase top-box-a''showcase showcase top-box-b';
-    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
 }
 
 .btn {
@@ -156,6 +156,7 @@ body {
     padding: 0.6rem 1.3rem;
     text-decoration: none;
     border: 0;
+    border-radius: 5px;
 }
 
 .btn:hover {
@@ -183,9 +184,9 @@ img {
 }
 
 .showcase h1 {
-    background-color: rgba(9, 36, 3, 0.767);
+    background-color: rgba(9, 36, 3, 0.774);
     padding: 5rem;
-    border-top-left-radius: 50px;
+    border-radius: 50px;
     font-size: 4rem;
     margin-bottom: 0;
     color: rgb(255, 251, 251);
@@ -193,8 +194,8 @@ img {
 
 .showcase p {
     padding: 2rem;
-    background-color: rgba(26, 36, 18, 0.651);
-    border-bottom-right-radius: 50px;
+    background-color: rgba(26, 36, 18, 0.644);
+    border-radius: 50px;
     font-size: larger;
     margin-bottom: 2%;
     color: rgb(255, 255, 255);
@@ -242,6 +243,48 @@ img {
 }
 
 
+/* Gallary page*/
+
+.g-imges {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.g-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+
+/* Team page */
+
+.team-con {
+    margin: 5rem;
+}
+
+.team-list {
+    margin-left: 2rem;
+}
+
+.team-list table {
+    border-spacing: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.team-list th {
+    height: 1rem;
+    text-align: left;
+}
+
+.team-list td {
+    padding: 2rem 0.5rem;
+    text-align: left;
+}
+
+
 /* footer */
 
 footer {
@@ -249,6 +292,10 @@ footer {
     margin-bottom: 0rem;
     padding: 0.1rem;
     color: white;
+}
+
+footer a {
+    color: whitesmoke;
 }
 
 footer .gallary img {
@@ -262,4 +309,99 @@ footer h1 {
 
 footer p {
     font-size: small;
+}
+
+footer .min-description p {
+    text-align: center;
+}
+
+
+/* Media Quries */
+
+@media screen and(max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+        margin: 10% 20%;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .showcase {
+        min-height: 50%;
+    }
+    .top-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-container {
+        grid-template-areas: 'showcase showcase''top-box-a top-box-b';
+    }
+    .showcase h1 {
+        font-size: 2.2rem;
+        padding: 10%;
+    }
+    .showcase p {
+        line-height: 2rem;
+        font-size: 1.8rem;
+        padding: 10%;
+    }
+    .showcase .btn {
+        display: block;
+        text-align: center;
+        margin: auto;
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .top-container {
+        grid-template-areas: 'showcase''top-box-a''top-box-b';
+    }
+    .showcase {
+        padding: 0.5rem;
+    }
+    .showcase h1 {
+        font-size: medium;
+        padding: 20%;
+        border-radius: 1px;
+    }
+    .showcase p {
+        line-height: 1rem;
+        font-size: small;
+        padding: 20%;
+        border-radius: 1px;
+    }
+    .btn {
+        border-radius: 5%;
+    }
+    .showcase .btn {
+        display: block;
+        text-align: center;
+        margin: auto;
+        font-size: large;
+    }
+    .boxes h2 {
+        font-size: medium;
+    }
+    .box {
+        text-align: center;
+        padding: 0.5rem 1rem;
+        background: var(--lighter);
+        box-shadow: var(--shadow);
+    }
+    .describ h3 {
+        font-size: medium;
+    }
+    .describ p {
+        font-size: small;
+    }
+    .team-list td {
+        padding: 0.2rem;
+        text-align: left;
+    }
+    .team-con {
+        margin: 1rem;
+    }
 }
