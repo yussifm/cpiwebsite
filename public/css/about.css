@@ -6,6 +6,12 @@ html {
     margin: 1rem 10rem;
 }
 
+.content h1,
+h2,
+h3 {
+    color: var(--primaey);
+}
+
 @media screen and (max-width: 780px) {
     .content {
         width: 46%;

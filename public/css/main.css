@@ -143,6 +143,13 @@ body {
     grid-gap: 20px;
 }
 
+.wrapper h1,
+h2,
+h3,
+h4 {
+    color: var(--primaey);
+}
+
 .top-container {
     display: grid;
     grid-gap: 20px;
@@ -151,8 +158,8 @@ body {
 }
 
 .btn {
-    background: var(--dark);
-    color: var(--light);
+    background: var(--primaey);
+    color: var(--lighter);
     padding: 0.6rem 1.3rem;
     text-decoration: none;
     border: 0;
@@ -189,7 +196,7 @@ img {
     border-radius: 50px;
     font-size: 4rem;
     margin-bottom: 0;
-    color: rgb(255, 251, 251);
+    color: var(--primaey);
 }
 
 .showcase p {
@@ -262,6 +269,12 @@ img {
 
 .team-con {
     margin: 5rem;
+}
+
+.team-con h1,
+h2,
+h3 {
+    color: var(--primaey);
 }
 
 .team-list {
