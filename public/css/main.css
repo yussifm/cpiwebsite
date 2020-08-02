@@ -298,6 +298,10 @@ h3 {
     text-align: left;
 }
 
+.team-bio p {
+    margin-bottom: 50px;
+}
+
 
 /* footer */
 
@@ -355,11 +359,13 @@ footer .min-description p {
     .showcase h1 {
         font-size: 2.2rem;
         padding: 10%;
+        max-height: 30%;
     }
     .showcase p {
         line-height: 2rem;
         font-size: 1.8rem;
         padding: 10%;
+        max-height: 40%;
     }
     .showcase .btn {
         display: block;
