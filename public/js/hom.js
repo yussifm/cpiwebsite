@@ -15,7 +15,7 @@
 
 var i = Math.floor((Math.random() * 36) + 1); // Start point
 
-var time = 10000;
+var time = 5000;
 
 
 // Change Image
