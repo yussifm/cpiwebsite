@@ -2,10 +2,12 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const path = require("path");
+const compression = require("compression");
 const PORT = process.env.PORT || 5000;
 
 const app = express();
 
+app.use(compression());
 app.use(bodyParser());
 //statics
 app.use(express.static(path.join(__dirname, "public")));
