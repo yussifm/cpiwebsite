@@ -9,10 +9,12 @@ const app = express();
 
 app.use(compression());
 app.use(bodyParser());
+
 //statics
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static(path.join(__dirname + "/public/css")));
 app.use(express.static(path.join(__dirname + "/public/img")));
+
 app.use(express.static(path.join(__dirname + "/public/js")));
 
 app.set("views", path.join(__dirname, "views"));
@@ -147,11 +149,19 @@ app.get("/gallary", function(req, res) {
     });
 });
 
-app.get("/team", function(req, res) {
-    res.render("team", {
-        title: "Team",
+app.get("/management", function(req, res) {
+    res.render("management", {
+        title: "Management Team",
     });
 });
+
+
+app.get("/board", function(req, res) {
+    res.render("board", {
+        title: "Borad",
+    });
+});
+
 
 app.get("/donate", function(req, res) {
     res.render("donate", {
