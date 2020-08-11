@@ -133,18 +133,25 @@ var imgs = [{
 app.get("/", function(req, res) {
     res.render("index", {
         title: "Home",
+        content1: "Coalition for Positive Impact (CPI) is a Non-Governmental nonprofit organization",
+        content2: "Coalition for Positive Impact (CPI) is a Non-Governmental nonprofit organization that is focused on making Africa a hub for the effective development of young leaders and entrepreneurs. We are committed to empowering and assisting young people in the most deprived regions and communities of Africa through innovation, mentorship, and technology. We invest in and assist young entrepreneurs to develop their enterprises and/or organizations, therefore causing them to combat poverty and puzzle out the youth unemployment challenge of Africa. We also assist young people build their leadership and entrepreneurial skills.",
+
     });
 });
 
 app.get("/about", function(req, res) {
     res.render("about", {
         title: "About",
+        content1: "Coalition for Positive Impact (CPI) is a Non-Governmental nonprofit organization ",
+        content2: "Coalition for Positive Impact (CPI) is a Non-Governmental nonprofit organization that is focused on Making Africa a hub for the effective development of young leaders and entrepreneurs",
     });
 });
 
 app.get("/gallary", function(req, res) {
     res.render("gallary", {
-        title: "Gallary",
+        title: "Gallery",
+        content1: "Coalition for Positive Impact (CPI)",
+        content2: "gallery and ACHIEVEMENTS pictures",
         imgs: imgs,
     });
 });
@@ -152,6 +159,8 @@ app.get("/gallary", function(req, res) {
 app.get("/management", function(req, res) {
     res.render("management", {
         title: "Management Team",
+        content1: "colitiogf",
+        content2: "coljfhgrrhthuuuuuuhjhejhue5uhurhuf",
     });
 });
 
@@ -159,6 +168,8 @@ app.get("/management", function(req, res) {
 app.get("/board", function(req, res) {
     res.render("board", {
         title: "Borad",
+        content1: "colitiogf",
+        content2: "coljfhgrrhthuuuuuuhjhejhue5uhurhuf",
     });
 });
 
@@ -166,6 +177,8 @@ app.get("/board", function(req, res) {
 app.get("/donate", function(req, res) {
     res.render("donate", {
         title: "Donate",
+        content1: "colitiogf",
+        content2: "coljfhgrrhthuuuuuuhjhejhue5uhurhuf",
     });
 });
 

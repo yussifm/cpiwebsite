@@ -210,11 +210,11 @@ img {
 }
 
 .top-box {
-    /* background: var(--lighter); */
     display: grid;
     align-items: center;
     justify-items: center;
-    /* box-shadow: var(--shadow); */
+    background: rgb(207, 241, 204);
+    box-shadow: var(--shadow);
     padding: 1.2rem;
 }
 
@@ -242,8 +242,6 @@ img {
 .box {
     text-align: center;
     padding: 1.3rem 2rem;
-    /* background: var(--lighter);
-    box-shadow: var(--shadow); */
 }
 
 .describ ul {
