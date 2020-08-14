@@ -135,7 +135,6 @@ app.get("/", function(req, res) {
         title: "Home",
         content1: "Coalition for Positive Impact (CPI) is a Non-Governmental nonprofit organization",
         content2: "Coalition for Positive Impact (CPI) is a Non-Governmental nonprofit organization that is focused on making Africa a hub for the effective development of young leaders and entrepreneurs. We are committed to empowering and assisting young people in the most deprived regions and communities of Africa through innovation, mentorship, and technology. We invest in and assist young entrepreneurs to develop their enterprises and/or organizations, therefore causing them to combat poverty and puzzle out the youth unemployment challenge of Africa. We also assist young people build their leadership and entrepreneurial skills.",
-
     });
 });
 
@@ -156,29 +155,35 @@ app.get("/gallary", function(req, res) {
     });
 });
 
+app.get("/news", function(req, res) {
+    res.render("news", {
+        title: "news",
+        content1: "",
+        content2: "",
+    });
+});
+
 app.get("/management", function(req, res) {
     res.render("management", {
         title: "Management Team",
-        content1: "colitiogf",
-        content2: "coljfhgrrhthuuuuuuhjhejhue5uhurhuf",
+        content1: "cpimpact management team",
+        content2: "cpimpact[Coalition for Positive Impact (CPI)]Executive Director, Director of Finance ",
     });
 });
-
 
 app.get("/board", function(req, res) {
     res.render("board", {
-        title: "Borad",
-        content1: "colitiogf",
-        content2: "coljfhgrrhthuuuuuuhjhejhue5uhurhuf",
+        title: "Board",
+        content1: "Coalition for Positive Impact (CPI) board",
+        content2: "cpimpact.org board Coalition for Positive Impact (CPI)",
     });
 });
-
 
 app.get("/donate", function(req, res) {
     res.render("donate", {
         title: "Donate",
-        content1: "colitiogf",
-        content2: "coljfhgrrhthuuuuuuhjhejhue5uhurhuf",
+        content1: "",
+        content2: "",
     });
 });
 
