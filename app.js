@@ -133,7 +133,7 @@ var imgs = [{
 app.get("/", function(req, res) {
     res.render("index", {
         title: "Home",
-        content1: "Coalition for Positive Impact (CPI) is a Non-Governmental nonprofit organization",
+        content1: "cpimpact.org",
         content2: "Coalition for Positive Impact (CPI) is a Non-Governmental nonprofit organization that is focused on making Africa a hub for the effective development of young leaders and entrepreneurs. We are committed to empowering and assisting young people in the most deprived regions and communities of Africa through innovation, mentorship, and technology. We invest in and assist young entrepreneurs to develop their enterprises and/or organizations, therefore causing them to combat poverty and puzzle out the youth unemployment challenge of Africa. We also assist young people build their leadership and entrepreneurial skills.",
     });
 });
@@ -158,7 +158,7 @@ app.get("/gallary", function(req, res) {
 app.get("/news", function(req, res) {
     res.render("news", {
         title: "news",
-        content1: "",
+        content1: "Coalition for Positive Impact (CPI) Igniting Dreams 2020",
         content2: "",
     });
 });
@@ -183,6 +183,15 @@ app.get("/donate", function(req, res) {
     res.render("donate", {
         title: "Donate",
         content1: "",
+        content2: "",
+    });
+});
+
+
+app.get("/contact", function(req, res) {
+    res.render("contact", {
+        title: "Contact",
+        content1: "contact us: ",
         content2: "",
     });
 });
