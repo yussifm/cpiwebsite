@@ -20,6 +20,7 @@ app.use(express.static(path.join(__dirname + "/public/js")));
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
+
 var imgs = [{
         image: "pic1.jpg",
     },
@@ -126,7 +127,59 @@ var imgs = [{
         image: "pic36.jpg",
     },
     {
-        image: "pic33.jpg",
+        image: "pic37.jpg",
+    },
+    {
+        image: "pic38.jpg",
+    },
+    {
+        image: "pic39.jpg",
+    },
+    {
+        image: "pic40.jpg",
+    },
+    {
+        image: "pic41.jpg",
+    },
+    {
+        image: "pic42.jpg",
+    },
+    {
+        image: "pic43.jpg",
+    },
+    {
+        image: "pic44.jpg",
+    }, {
+        image: "pic45.jpg",
+    }, {
+        image: "pic46.jpg",
+    }, {
+        image: "pic47.jpg",
+    }, {
+        image: "pic48.jpg",
+    }, {
+        image: "pic49.jpg",
+    }, {
+        image: "pic50.jpg",
+    }, {
+        image: "pic51.jpg",
+    },
+    {
+        image: "pic52.jpg",
+    }, {
+        image: "pic53.jpg",
+    }, {
+        image: "pic54.jpg",
+    }, {
+        image: "pic55.jpg",
+    }, {
+        image: "pic56.jpg",
+    }, {
+        image: "pic57.jpg",
+    }, {
+        image: "pic58.jpg",
+    }, {
+        image: "pic59.jpg",
     },
 ];
 
