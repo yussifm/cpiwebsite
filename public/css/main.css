@@ -294,6 +294,10 @@
     .donate-body {
         margin: 3rem 3rem 50rem 3rem;
     }
+    
+    .donate-body td {
+        padding: 5px;
+    }
     /* footer */
     
     footer {
@@ -412,5 +416,20 @@
         }
         .team-con {
             margin: 1rem;
+        }
+        .donate-body h1 {
+            font-size: large;
+        }
+        .donate-body {
+            margin: 1rem 1rem 50rem 1rem;
+        }
+    }
+    
+    @media screen and (max-width: 320px) {
+        .donate-body {
+            margin: 1rem 0.5rem 30rem 0.5rem;
+        }
+        .donate-body td {
+            font-size: small;
         }
     }

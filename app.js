@@ -212,7 +212,7 @@ app.get("/news", function(req, res) {
     res.render("news", {
         title: "news",
         content1: "Coalition for Positive Impact (CPI) Igniting Dreams 2020",
-        content2: "",
+        content2: " Coalition for Positive Impact (CPI) Igniting Dreams 2020",
     });
 });
 
@@ -235,8 +235,16 @@ app.get("/board", function(req, res) {
 app.get("/donate", function(req, res) {
     res.render("donate", {
         title: "Donate",
-        content1: "",
-        content2: "",
+        content1: "Help or reach out to us to support our work",
+        content2: "reach out to us to support our work",
+    });
+});
+
+app.get("/init", function(req, res) {
+    res.render("init", {
+        title: "Initiatives",
+        content1: " CPImpact Initiatives",
+        content2: "Igniting Dreams Prize Igniting Dreams (ID) Seminar",
     });
 });
 
@@ -245,7 +253,7 @@ app.get("/contact", function(req, res) {
     res.render("contact", {
         title: "Contact",
         content1: "contact us: ",
-        content2: "",
+        content2: "Contact CPI cpimpact.org or info at cpimpact.org",
     });
 });
 

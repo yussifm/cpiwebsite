@@ -30,8 +30,8 @@ h3 {
 
 @media screen and (max-width: 480px) {
     .content {
-        width: 80%;
-        margin: 10%;
+        width: 90%;
+        margin: 5%;
     }
     .content h1 {
         font-size: x-large;
