@@ -240,10 +240,26 @@ app.get("/donate", function(req, res) {
     });
 });
 
-app.get("/init", function(req, res) {
-    res.render("init", {
-        title: "Initiatives",
+app.get("/init-DFellowship", function(req, res) {
+    res.render("init-DFellowship", {
+        title: "Initiatives Dreams Fellowship ",
         content1: " CPImpact Initiatives",
+        content2: "Igniting Dreams Prize Igniting Dreams (ID) Seminar",
+    });
+});
+
+app.get("/init-DSeminar", function(req, res) {
+    res.render("init-DSeminar", {
+        title: "Initiatives Dreams Seminar",
+        content1: " CPImpact Initiatives Igniting Dreams (ID) Seminar",
+        content2: "Igniting Dreams Prize Igniting Dreams (ID) Seminar",
+    });
+});
+
+app.get("/init-DPrice", function(req, res) {
+    res.render("init-DPrice", {
+        title: "Initiatives Igniting Dreams Prize",
+        content1: " CPImpact Initiatives Igniting Dreams Prize",
         content2: "Igniting Dreams Prize Igniting Dreams (ID) Seminar",
     });
 });
